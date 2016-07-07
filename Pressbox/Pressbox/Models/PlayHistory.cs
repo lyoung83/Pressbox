@@ -8,10 +8,10 @@ namespace Pressbox.Models
 { // The logic to update after current play information is entered.
     
     
-    class PlayHistory : IPlayHistory
+    public class PlayHistory : Play, IPlayHistory
     {
         public string playCalled { get; set; }
         public int resultFreq { get; set; }
-        public int madeTackle { get; set; }
+        public string madeTackle { get; set; }
     }
 }

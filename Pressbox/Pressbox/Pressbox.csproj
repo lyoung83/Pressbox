@@ -41,7 +41,11 @@
     </Compile>
     <Compile Include="Models\CurrentPlay.cs" />
     <Compile Include="Models\ICurrentPlay.cs" />
+    <Compile Include="Models\IPlay.cs" />
+    <Compile Include="Models\IPlayer.cs" />
     <Compile Include="Models\IPlayHistory.cs" />
+    <Compile Include="Models\Play.cs" />
+    <Compile Include="Models\Player.cs" />
     <Compile Include="Models\PlayHistory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\HistoryViewModel.cs" />

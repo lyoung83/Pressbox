@@ -7,57 +7,68 @@ using System.Threading.Tasks;
 
 namespace Pressbox.ViewModels   
 {
-    class HistoryViewModel : IPlayHistory
+   public class HistoryViewModel:IPlayHistory
     {
-        CurrentPlay c = new CurrentPlay();
-        public string madeTackle
-        { 
+        private readonly IPlay _play;
+
+        public IPlay Play
+        {
             get
             {
-               return c.tackledBy += 1;
-                
+                return _play;
+            }
+            set
+            {
+                Play = value;
+            }
+        }
 
-
+        public int madeTackle
+        {
+            get
+            {
                 throw new NotImplementedException();
             }
 
             set
             {
-                c.tackledBy = value;
                 throw new NotImplementedException();
             }
         }
+
+      
+        
+
+       
+        
 
         public string playCalled
         {
             get
             {
-
-               return  c.playCall;
+                return Play.playName;
                 throw new NotImplementedException();
             }
 
             set
             {
-                c.playCall = value;
+                playCalled = value;
                 throw new NotImplementedException();
             }
         }
 
-        public string resultFreq
+
+        public int resultFreq
         {
             get
             {
-                return c.tackledBy += 1;
                 throw new NotImplementedException();
             }
 
             set
             {
-                c.tackledBy = value;
                 throw new NotImplementedException();
             }
         }
     }
-
 }

@@ -9,7 +9,7 @@ namespace Pressbox.Models
 { // Current play information to update history is recorded PlayHistory model.
 
 
-    class CurrentPlay : ICurrentPlay
+    class CurrentPlay : Play, ICurrentPlay
     {
         public string playCall { get; set; }
         public string tackledBy { get; set; }
