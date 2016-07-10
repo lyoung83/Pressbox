@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pressbox.Models
 {
-    class Plays
+  public  class Plays
     {
         public int playId { get; set; }
         public string playName { get; set; }
@@ -16,6 +16,17 @@ namespace Pressbox.Models
             play.Add("Run");
             play.Add("Pass");
             play.Add("Counter");
+        }
+        public void playResult()
+        {
+            List<string> result = new List<string>();
+            result.Add("Loss");
+            result.Add("No Gain");
+            result.Add("Short Gain");
+            result.Add("Medium Gain");
+            result.Add("Long Gain");
+            result.Add("Explosion");
+            result.Add("TD");
         }
     }
 }

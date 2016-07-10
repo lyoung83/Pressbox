@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pressbox.Models
 {
-    class Defense
+    public class Defense
     {
         public void Dformation()
         {
