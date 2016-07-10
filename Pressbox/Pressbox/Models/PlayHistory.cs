@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Pressbox.Models
 {
-    class PlayHistory
+    public class PlayHistory : IPlayHistory
     {
         public string lastPlay { get; set; }
-        public string currentPlay { get; set; }
+        public string lastResult { get; set; }
+        public string tackleMade { get; set; }
     }
 }

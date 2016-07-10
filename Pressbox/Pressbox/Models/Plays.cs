@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pressbox.Models
 {
-  public  class Plays
+  public abstract class Plays
     {
         public int playId { get; set; }
         public string playName { get; set; }
