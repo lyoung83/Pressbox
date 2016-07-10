@@ -1,9 +1,0 @@
-﻿namespace Pressbox.Models
-{
-    public interface IPlayHistory
-    {
-        string madeTackle { get; set; }
-        string playCalled { get; set; }
-        int resultFreq { get; set; }
-    }
-}
